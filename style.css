@@ -1,0 +1,95 @@
+ {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  font-family: Roboto;
+  size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+
+.wrap {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 476px;
+  height: 688px;
+  margin: 20px auto;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.title {
+  margin: 15px 0px;
+  font-size: 25px;
+}
+
+.input_space {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #c7e4ed;
+  border-radius: 6px;
+  padding: 0 12px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.task_value {
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  list-style-type: none;
+  border: none;
+  outline: none;
+}
+
+.add_button {
+  margin: 13px 0 13px 13px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url(./img/ad-icon.svg);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-position: center;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  margin-top: 8px;
+  justify-content: space-between;
+  border: 2px solid pink;
+  border-radius: 6px;
+  min-height: 45px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.task:hover {
+  background-color: #c7e4ed;
+}
+
+.delete_button {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  background-image: url(./img/close-icon.svg);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-position: center;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + p {
+  text-decoration: line-through;
+}
